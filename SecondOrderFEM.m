@@ -12,7 +12,6 @@ TotalEle = dlmread('Node Number.DAT');          % global node number matrix
 TotalCoo = dlmread('Coordinates.DAT');          % node coordinates
 Boundaries = dlmread('Boundary.DAT');           % boundary condition matrix
 
-
 TotalEle = TotalEle';
 TotalEle = TotalEle(:,1:3);
 TotalCoo = TotalCoo';
@@ -128,11 +127,3 @@ figure (1)
 
 trisurf(T1,x,y,z);
 title('TM32')
-
-
-
-
-
-
-
-
